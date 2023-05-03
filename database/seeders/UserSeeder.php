@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
         User::create([
             'name' => 'Admin User',
             'email' => 'admin@example.com',
-            'password' => Hash::make('admin10'),
+            'password' => bcrypt('admin10'),
             'birthdate' => Carbon::now()->subYears(rand(20, 50))->format('Y-m-d'),
             'role' => 'admin'
         ]);

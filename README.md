@@ -20,6 +20,10 @@ git clone https://github.com/ashushanyan/ToolKitTest
 cd laravel-project (ToolKitTest)
 composer install
 ```
+2.1 Also you can run project with Docker::
+```bash
+compose -f myapp-docker-compose.yml up
+```
 3. Create a new database and update the `.env` file with your database credentials:
 ```makefile
 DB_DATABASE=your_database_name
